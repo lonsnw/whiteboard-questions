@@ -48,8 +48,8 @@ Example Solution:
     }
 
 
-<h2>Conditionals and Mod Operator</h2>
-<h3>Fizz-Buzz</h3>
+<h2>Conditionals and Mod Operator
+Fizz-Buzz</h2>
 
 The question:
 
@@ -225,53 +225,60 @@ Write a function that takes in two arguments, an array of strings and a string. 
 
 Example clarifying questions:
 
-Will they always be array of strings and a string? Yes.
-May I use built in methods like .toLowercase()? Yes
-Will the array always have strings? It may be empty, if it is, return 0.
-Does capitalization matter? No. You may assume all characters are lowercase.
+* Will they always be array of strings and a string? Yes.
+* May I use built in methods like .toLowercase()? Yes
+* Will the array always have strings? It may be empty, if it is, return 0.
+* Does capitalization matter? No. You may assume all characters are lowercase.
+
 Example test cases:
 
-["apple", "pizza", "orange", "apple", "sour apple"], "apple" -> 2
-["apple", "pizza", "orange", "apple", "sour apple"], "pizza" -> 1
-["apple", "pizza", "orange", "apple", "sour apple"], "sour" -> 0
-["sour", "soiree", "Sour", "sour", "sour"], "sour" -> 3
-[], "banana" -> 0
+    ["apple", "pizza", "orange", "apple", "sour apple"], "apple" -> 2
+    ["apple", "pizza", "orange", "apple", "sour apple"], "pizza" -> 1
+    ["apple", "pizza", "orange", "apple", "sour apple"], "sour" -> 0
+    ["sour", "soiree", "Sour", "sour", "sour"], "sour" -> 3
+    [], "banana" -> 0
+
 Interviewer Note: To complicate the problem, allow letters to match even if one is capitalized. Example:
 
-["sour", "soiree", "Sour", "sour", "sour"], "sour" -> 4
+    ["sour", "soiree", "Sour", "sour", "sour"], "sour" -> 4
+
 Example Solution:
 
-const countWordMatches = (arrayToCheck, wordToCheck) => {
-    let wordCount = 0;
-    for (let i = 0; i < arrayToCheck.length; i++) {
-        if (arrayToCheck[i] == wordToCheck) {
-            wordCount++;
+    const countWordMatches = (arrayToCheck, wordToCheck) => {
+        let wordCount = 0;
+        for (let i = 0; i < arrayToCheck.length; i++) {
+            if (arrayToCheck[i] == wordToCheck) {
+                wordCount++;
+            }
         }
+        return wordCount;
     }
-    return wordCount;
-}
-Add Up the Numbers
+
+<h2>Add Up the Numbers</h2>
+
 Prompt:
 
 Write a function that takes in a number. Return the sum of all the numbers from 1 to the number you passed in. For example, if we pass in 4, we'd return 1 + 2 + 3 + 4 = 10.
 
 Example clarifying questions:
 
-Can the number passed in be negative? No.
-Can the number be zero? No.
-Will it always be a number? Yes.
+* Can the number passed in be negative? No.
+* Can the number be zero? No.
+* Will it always be a number? Yes.
+
 Example test cases:
 
-addItUp(4) -> 10
-addItUp(6) -> 21
-addItUp(1) -> 1
+    addItUp(4) -> 10
+    addItUp(6) -> 21
+    addItUp(1) -> 1
+
 Example solution:
 
-function addItUp(number) {
-  let sum = 0;
-  for (let i = 1; i <= number; i++) {
-    sum += i;
-  }
+    function addItUp(number) {
+      let sum = 0;
+      for (let i = 1; i <= number; i++) {
+        sum += i;
+      }
   
-  return sum;
-}
+      return sum;
+    }
