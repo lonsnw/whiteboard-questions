@@ -28,9 +28,9 @@ Example clarifying questions:
 * Will it ever receive anything other than a string? You may assume it always takes in a string.
 Example test cases:
 
-> "cat" -> "tac"
-> hello world -> "dlrow olleh"
-> "What up?" -> "?pu tahW"
+    "cat" -> "tac"
+    hello world -> "dlrow olleh"
+    "What up?" -> "?pu tahW"
 
 Lessons:
 
@@ -39,13 +39,13 @@ Lessons:
 
 Example Solution:
 
-> const stringReverser = originalString => {
->     let reversedString = "";
->     for (let i = originalString.length - 1; i >= 0; i--) {
->         reversedString += originalString[i];
->     }
->     return reversedString;
-> }
+    const stringReverser = originalString => {
+        let reversedString = "";
+        for (let i = originalString.length - 1; i >= 0; i--) {
+            reversedString += originalString[i];
+        }
+        return reversedString;
+    }
 
 
 <h2>Conditionals and Mod Operator</h2>
