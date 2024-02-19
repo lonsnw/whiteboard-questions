@@ -27,7 +27,7 @@ Example clarifying questions:
 * JavaScript has a .reverse() method, may I use that? Not for this problem.
 * Will it ever receive anything other than a string? You may assume it always takes in a string.
 Example test cases:
-
+> 
     "cat" -> "tac"
     hello world -> "dlrow olleh"
     "What up?" -> "?pu tahW"
